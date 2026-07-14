@@ -11,7 +11,7 @@
 
     <header>
         <nav>
-            <h2 class="brand"></h2>🚗 Patrick</h2>
+            <h2 class="brand"><h2>🚗 Patrick</h2>
 
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,16 +20,18 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle">🌙</button>
+
         </nav>
     </header>
     
    <section id="home" class="hero">
 
-    <img src="images/patrick.jpg" alt="Patrick Logo" class="logo"
+    <img src="images/patrick.jpg" alt="Patrick Logo" class="logo">
 
     <h1>Hello, I'm Patrick</h1>
 
-    <h2>Web Developer & Automotive Engineer</h2>
+    <h2><span id="typing"></span></h2>
 
     <p>
         I create responsive websites and build solutions using technology and engineering skills.
@@ -40,7 +42,7 @@
     </a>
 
 </section> 
-</section>
+
 <section id="about" class="about">
 
     <h2>About Me</h2>
@@ -126,31 +128,39 @@
 
 </section>
 
-<section id="contact" class="contact">
-
+<section id="contact">
     <h2>Contact Me</h2>
-
-    <p>
-        Feel free to get in touch if you would like to work together or learn more about my projects.
-    </p>
+    <p>Feel free to reach out if you'd like to work together, discuss a project, or simply say hello!</p>
 
     <div class="contact-info">
+        <p>📧 <strong>Email:</strong>
+            <a href="mailto:njugunapatrick357@gmail.com">njugunapatrick357@gmail.com</a>
+        </p>
 
-        <p>Email:
-    <a href="mailto:njugunapatrick357@gmail.com">njugunapatrick357@gmail.com</a>
-</p>
-<p>Phone:<a href="tel:+254711286061">+254711286061</a></p>
+        <p>📞 <strong>Phone:</strong>
+            <a href="tel:+254711286061">+254 711286061</a>
+        </p>
 
-<p>GitHub:
-    <a href="https://github.com/Siaf9550" target="_blank">
-        github.com/Siaf9550
-    </a>
-</p>
+        <p>💻 <strong>GitHub:</strong>
+            <a href="https://github.com/Siaf9550" target="_blank">
+                github.com/Siaf9550
+            </a>
+        </p>
     </div>
 
-</section>
+    <form action="https://formsubmit.co/njugunapatrick357@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
 
-<footer><section id="experience">
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+</section>
+<section id="experience">
     <h2>Experience</h2>
 
     <div class="timeline">
@@ -167,6 +177,7 @@
         </div>
     </div>
 </section>
+<footer>
 
     <p>
         © 2026 Patrick. All Rights Reserved.
@@ -174,7 +185,8 @@
 
 </footer>
 
-
+<button id="topBtn" title="Go to top">⬆</button>
+<script src="script.js"></script>
 
 </body>
 </html>

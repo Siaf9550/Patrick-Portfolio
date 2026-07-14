@@ -14,7 +14,7 @@
     <header>
         <nav>
            <div class="brand">
-    <img src="images/logo.png" alt="Patrick Logo" class="nav-logo">
+    <img src="images/logo.png" alt="Patrick Logo" class="nav-logo"
     <h2>Patrick</h2>
 </div>
             <ul>
@@ -200,6 +200,15 @@
 
 <button id="topBtn" title="Go to top">⬆</button>
 <script src="script.js"></script>
+<script>
+const form = document.querySelector("form");
+const button = form.querySelector("button");
+
+form.addEventListener("submit", function() {
+    button.innerHTML = "Sending...";
+    button.disabled = true;
+});
+</script>
 
 </body>
 </html>

@@ -317,3 +317,148 @@ html {
 #contact a:hover {
     text-decoration: underline;
 }
+#theme-toggle {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode section {
+    background: #1e1e1e;
+}
+
+.dark-mode a {
+    color: #4da3ff;
+}
+#typing {
+    color: #007bff;
+    font-weight: bold;
+    border-right: 3px solid #007bff;
+    padding-right: 5px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.hero img {
+    transition: transform 0.4s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.08);
+}
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background: #0056b3;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}.project-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+#contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #0056b3;
+}
